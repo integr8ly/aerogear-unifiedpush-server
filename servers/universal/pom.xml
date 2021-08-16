@@ -29,7 +29,7 @@
     <name>Configurable Container for UnifiedPush Server</name>
 
     <properties>
-        <base>jboss/wildfly:20.0.1.Final</base>
+        <base>quay.io/integreatly/wildfly:20.0.1.Final</base>
         <project.artifactId>${project.artifactId}</project.artifactId>
     </properties>
 
@@ -40,6 +40,13 @@
             <artifactId>unifiedpush-server-dependencies</artifactId>
             <version>${project.version}</version>
             <type>pom</type>
+        </dependency>
+
+        <dependency>
+            <groupId>org.aerogear.unifiedpush</groupId>
+            <artifactId>admin-ui</artifactId>
+            <version>${admin-ui.version}</version>
+            <scope>compile</scope>
         </dependency>
 
         <dependency>
